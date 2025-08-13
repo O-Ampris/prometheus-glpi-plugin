@@ -13,9 +13,9 @@ function plugin_version_prometheus() {
   return [
     'name' => 'Prometheus GLPI',
     'version' => PLUGIN_PROMETHEUS_VERSION,
-    'author' => '<a href="https://github.com/O-Ampris">Fabio Araújo</a>',
+    'author' => '<a href="https://github.com/O-Ampris">Ampris</a>',
     'license' => 'GPLv2+',
-    'homepage' => 'https://github.com/O-Ampris/chamado-externo-plugin',
+    'homepage' => 'https://github.com/O-Ampris/prometheus-glpi-plugin',
   ];
 }
 
