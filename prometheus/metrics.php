@@ -51,12 +51,12 @@ function get_data() {
     
     $sql = "
         SELECT
-            SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END) AS new,
-            SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END) AS atending_assigned,
-            SUM(CASE WHEN status = 3 THEN 1 ELSE 0 END) AS atending_planned,
-            SUM(CASE WHEN status = 4 THEN 1 ELSE 0 END) AS pending,
-            SUM(CASE WHEN status = 5 THEN 1 ELSE 0 END) AS resolved,
-            SUM(CASE WHEN status = 6 THEN 1 ELSE 0 END) AS closed
+            COALESCE(SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END), 0) AS new,
+            COALESCE(SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END), 0) AS atending_assigned,
+            COALESCE(SUM(CASE WHEN status = 3 THEN 1 ELSE 0 END), 0) AS atending_planned,
+            COALESCE(SUM(CASE WHEN status = 4 THEN 1 ELSE 0 END), 0) AS pending,
+            COALESCE(SUM(CASE WHEN status = 5 THEN 1 ELSE 0 END), 0) AS resolved,
+            COALESCE(SUM(CASE WHEN status = 6 THEN 1 ELSE 0 END), 0) AS closed
         FROM glpi_tickets;
     ";
     
@@ -66,12 +66,12 @@ function get_data() {
     $sql = "
         SELECT
             COUNT(*) AS total,
-            SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END) AS new,
-            SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END) AS atending_assigned,
-            SUM(CASE WHEN status = 3 THEN 1 ELSE 0 END) AS atending_planned,
-            SUM(CASE WHEN status = 4 THEN 1 ELSE 0 END) AS pending,
-            SUM(CASE WHEN status = 5 THEN 1 ELSE 0 END) AS resolved,
-            SUM(CASE WHEN status = 6 THEN 1 ELSE 0 END) AS closed
+            COALESCE(SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END), 0) AS new,
+            COALESCE(SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END), 0) AS atending_assigned,
+            COALESCE(SUM(CASE WHEN status = 3 THEN 1 ELSE 0 END), 0) AS atending_planned,
+            COALESCE(SUM(CASE WHEN status = 4 THEN 1 ELSE 0 END), 0) AS pending,
+            COALESCE(SUM(CASE WHEN status = 5 THEN 1 ELSE 0 END), 0) AS resolved,
+            COALESCE(SUM(CASE WHEN status = 6 THEN 1 ELSE 0 END), 0) AS closed
         FROM glpi_tickets;
     ";
     
