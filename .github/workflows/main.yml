@@ -25,13 +25,14 @@ jobs:
 
       - name: Criar tar.gz da pasta prometheus
         run: |
-          tar -czvf prometheus-${{ steps.vars.outputs.version }}.tar.gz prometheus
+          tar -czvf prometheus-glpi-plugin.tar.gz prometheus
 
       - name: Criar Release no GitHub
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.vars.outputs.version }}
           name: "GLPI Plugin Prometheus ${{ steps.vars.outputs.version }}"
-          files: prometheus-${{ steps.vars.outputs.version }}.tar.gz
+          files: |
+            prometheus-glpi-plugin.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
