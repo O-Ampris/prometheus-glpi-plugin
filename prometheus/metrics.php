@@ -160,104 +160,104 @@ echo "# HELP glpi_total_categories Número total de categorias\n";
 echo "# TYPE glpi_total_categories counter\n";
 echo "glpi_total_categories {$data['total_categories']}\n\n";
 
-echo "# HELP glpi_users_total Número total de usuários\n";
-echo "# TYPE glpi_users_total counter\n";
-echo "glpi_users_total {$data['users']['total']}\n\n";
+echo "# HELP glpi_total_users Número total de usuários\n";
+echo "# TYPE glpi_total_users counter\n";
+echo "glpi_total_users {$data['users']['total']}\n\n";
 
-echo "# HELP glpi_users_active_total Número total de usuários ativos\n";
-echo "# TYPE glpi_users_active_total counter\n";
-echo "glpi_users_active_total {$data['users']['active']}\n\n";
+echo "# HELP glpi_total_users_active Número total de usuários ativos\n";
+echo "# TYPE glpi_total_users_active counter\n";
+echo "glpi_total_users_active {$data['users']['active']}\n\n";
 
-echo "# HELP glpi_users_default_count_total Número total de usuários com interface padrão\n";
-echo "# TYPE glpi_users_default_count_total counter\n";
-echo "glpi_users_default_count_total {$data['users']['default_view_count']}\n\n";
+echo "# HELP glpi_total_users_default_count Número total de usuários com interface padrão\n";
+echo "# TYPE glpi_total_users_default_count counter\n";
+echo "glpi_total_users_default_count {$data['users']['default_view_count']}\n\n";
 
-echo "# HELP glpi_users_not_central_total Número total de usuários com interface simplificada\n";
-echo "# TYPE glpi_users_not_central_total counter\n";
-echo "glpi_users_not_central_total {$data['users']['basic_view_count']}\n\n";
+echo "# HELP glpi_total_users_not_central Número total de usuários com interface simplificada\n";
+echo "# TYPE glpi_total_users_not_central counter\n";
+echo "glpi_total_users_not_central {$data['users']['basic_view_count']}\n\n";
 
-echo "# HELP glpi_tickets_total Número total de chamados\n";
-echo "# TYPE glpi_tickets_total counter\n";
-echo "glpi_tickets_total {$data['tickets']['total']}\n\n";
+echo "# HELP glpi_total_tickets Número total de chamados\n";
+echo "# TYPE glpi_total_tickets counter\n";
+echo "glpi_total_tickets {$data['tickets']['total']}\n\n";
 
-echo "# HELP glpi_new_tickets_total Número total de chamados com status: `Novo`\n";
-echo "# TYPE glpi_new_tickets_total counter\n";
-echo "glpi_new_tickets_total {$data['tickets']['new']}\n\n";
+echo "# HELP glpi_total_new_tickets Número total de chamados com status: `Novo`\n";
+echo "# TYPE glpi_total_new_tickets counter\n";
+echo "glpi_total_new_tickets {$data['tickets']['new']}\n\n";
 
-echo "# HELP glpi_atending_assigned_tickets_total Número total de chamados com status: `Em atendimento (atribuído)`\n";
-echo "# TYPE glpi_atending_assigned_tickets_total counter\n";
-echo "glpi_atending_assigned_tickets_total {$data['tickets']['atending_assigned']}\n\n";
+echo "# HELP glpi_total_atending_assigned_tickets Número total de chamados com status: `Em atendimento (atribuído)`\n";
+echo "# TYPE glpi_total_atending_assigned_tickets counter\n";
+echo "glpi_total_atending_assigned_tickets {$data['tickets']['atending_assigned']}\n\n";
 
-echo "# HELP glpi_atending_planned_tickets_total Número total de chamados com status: `Em atendimento (planejado)`\n";
-echo "# TYPE glpi_atending_planned_tickets_total counter\n";
-echo "glpi_atending_planned_tickets_total {$data['tickets']['atending_planned']}\n\n";
+echo "# HELP glpi_total_atending_planned_tickets Número total de chamados com status: `Em atendimento (planejado)`\n";
+echo "# TYPE glpi_total_atending_planned_tickets counter\n";
+echo "glpi_total_atending_planned_tickets {$data['tickets']['atending_planned']}\n\n";
 
-echo "# HELP glpi_pending_tickets_total Número total de chamados com status: `Pendente`\n";
-echo "# TYPE glpi_pending_tickets_total counter\n";
-echo "glpi_pending_tickets_total {$data['tickets']['pending']}\n\n";
+echo "# HELP glpi_total_pending_tickets Número total de chamados com status: `Pendente`\n";
+echo "# TYPE glpi_total_pending_tickets counter\n";
+echo "glpi_total_pending_tickets {$data['tickets']['pending']}\n\n";
 
-echo "# HELP glpi_resolved_tickets_total Número total de chamados com status: `Solucionado`\n";
-echo "# TYPE glpi_resolved_tickets_total counter\n";
-echo "glpi_resolved_tickets_total {$data['tickets']['resolved']}\n\n";
+echo "# HELP glpi_total_resolved_tickets Número total de chamados com status: `Solucionado`\n";
+echo "# TYPE glpi_total_resolved_tickets counter\n";
+echo "glpi_total_resolved_tickets {$data['tickets']['resolved']}\n\n";
 
-echo "# HELP glpi_closed_tickets_total Número total de chamados com status: `Fechado`\n";
-echo "# TYPE glpi_closed_tickets_total counter\n";
-echo "glpi_closed_tickets_total {$data['tickets']['closed']}\n\n";
+echo "# HELP glpi_total_closed_tickets Número total de chamados com status: `Fechado`\n";
+echo "# TYPE glpi_total_closed_tickets counter\n";
+echo "glpi_total_closed_tickets {$data['tickets']['closed']}\n\n";
 
-echo "# HELP glpi_plugins_total Número total de plugins\n";
-echo "# TYPE glpi_plugins_total counter\n";
-echo "glpi_plugins_total {$data['total_plugins']}\n\n";
+echo "# HELP glpi_total_plugins Número total de plugins\n";
+echo "# TYPE glpi_total_plugins counter\n";
+echo "glpi_total_plugins {$data['total_plugins']}\n\n";
 
-echo "# HELP glpi_notifications_total Total de notificações na fila\n";
-echo "# TYPE glpi_notifications_total counter\n";
-echo "glpi_notifications_total {$data['notifications']['total']}\n\n";
+echo "# HELP glpi_total_notifications Total de notificações na fila\n";
+echo "# TYPE glpi_total_notifications counter\n";
+echo "glpi_total_notifications {$data['notifications']['total']}\n\n";
 
-echo "# HELP glpi_notifications_pending Notificações pendentes\n";
-echo "# TYPE glpi_notifications_pending gauge\n";
-echo "glpi_notifications_pending {$data['notifications']['pending']}\n\n";
+echo "# HELP glpi_total_pending_notifications Notificações pendentes\n";
+echo "# TYPE glpi_total_pending_notifications gauge\n";
+echo "glpi_total_pending_notifications {$data['notifications']['pending']}\n\n";
 
-echo "# HELP glpi_notifications_high_age Notificações com mais de 20 minutos\n";
-echo "# TYPE glpi_notifications_high_age gauge\n";
-echo "glpi_notifications_high_age {$data['notifications']['high_age']}\n\n";
+echo "# HELP glpi_total_high_age_notifications Notificações com mais de 20 minutos\n";
+echo "# TYPE glpi_total_high_age_notifications gauge\n";
+echo "glpi_total_high_age_notifications {$data['notifications']['high_age']}\n\n";
 
-echo "# HELP glpi_notifications_high_try Notificações com mais de 3 tentativas\n";
-echo "# TYPE glpi_notifications_high_try gauge\n";
-echo "glpi_notifications_high_try {$data['notifications']['high_try']}\n\n";
+echo "# HELP glpi_total_high_try_notifications Notificações com mais de 3 tentativas\n";
+echo "# TYPE glpi_total_high_try_notifications gauge\n";
+echo "glpi_total_high_try_notifications {$data['notifications']['high_try']}\n\n";
 
 foreach ($data['cron_jobs'] as $cron) {
-    echo "# HELP glpi_{$cron['name']}_state Estado do cronjob `{$cron['name']}` (ativo = 1, inativo = 0)\n";
-    echo "# TYPE glpi_{$cron['name']}_state gauge\n";
-    echo "glpi_{$cron['name']}_state {$cron['state']}\n\n";
+    echo "# HELP glpi_crontasks_state_{$cron['name']} Estado do cronjob `{$cron['name']}` (ativo = 1, inativo = 0)\n";
+    echo "# TYPE glpi_crontasks_state_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_state_{$cron['name']} {$cron['state']}\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_frequency_seconds Frequência do cronjob `{$cron['name']}` em segundos\n";
-    echo "# TYPE glpi_{$cron['name']}_frequency_seconds gauge\n";
-    echo "glpi_{$cron['name']}_frequency_seconds {$cron['frequency']}\n\n";
+    echo "# HELP glpi_crontasks_frequency_seconds_{$cron['name']} Frequência do cronjob `{$cron['name']}` em segundos\n";
+    echo "# TYPE glpi_crontasks_frequency_seconds_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_frequency_seconds_{$cron['name']} {$cron['frequency']}\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_frequency_minutes Frequência do cronjob `{$cron['name']}` em minutos\n";
-    echo "# TYPE glpi_{$cron['name']}_frequency_minutes gauge\n";
-    echo "glpi_{$cron['name']}_frequency_minutes " . ($cron['frequency'] / 60) . "\n\n";
+    echo "# HELP glpi_crontasks_frequency_minutes_{$cron['name']} Frequência do cronjob `{$cron['name']}` em minutos\n";
+    echo "# TYPE glpi_crontasks_frequency_minutes_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_frequency_minutes_{$cron['name']} " . ($cron['frequency'] / 60) . "\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_frequency_hours Frequência do cronjob `{$cron['name']}` em horas\n";
-    echo "# TYPE glpi_{$cron['name']}_frequency_hours gauge\n";
-    echo "glpi_{$cron['name']}_frequency_hours " . ($cron['frequency'] / 60 / 60) . "\n\n";
+    echo "# HELP glpi_crontasks_frequency_hours_{$cron['name']} Frequência do cronjob `{$cron['name']}` em horas\n";
+    echo "# TYPE glpi_crontasks_frequency_hours_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_frequency_hours_{$cron['name']} " . ($cron['frequency'] / 60 / 60) . "\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_last_run_seconds Última vez que o cronjob `{$cron['name']}` rodou em segundos\n";
-    echo "# TYPE glpi_{$cron['name']}_last_run_seconds gauge\n";
-    echo "glpi_{$cron['name']}_last_run_seconds " . strtotime($cron['lastrun']) * 1 . "\n\n";
+    echo "# HELP glpi_crontasks_last_run_seconds_{$cron['name']} Última vez que o cronjob `{$cron['name']}` rodou em segundos\n";
+    echo "# TYPE glpi_crontasks_last_run_seconds_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_last_run_seconds_{$cron['name']} " . strtotime($cron['lastrun']) * 1 . "\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_last_run_minutes Última vez que o cronjob `{$cron['name']}` rodou em minutos\n";
-    echo "# TYPE glpi_{$cron['name']}_last_run_minutes gauge\n";
-    echo "glpi_{$cron['name']}_last_run_minutes " . strtotime($cron['lastrun']) * 1 / 60 . "\n\n";
+    echo "# HELP glpi_crontasks_last_run_minutes_{$cron['name']} Última vez que o cronjob `{$cron['name']}` rodou em minutos\n";
+    echo "# TYPE glpi_crontasks_last_run_minutes_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_last_run_minutes_{$cron['name']} " . strtotime($cron['lastrun']) * 1 / 60 . "\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_last_run_hours Última vez que o cronjob `{$cron['name']}` rodou em horas\n";
-    echo "# TYPE glpi_{$cron['name']}_last_run_hours gauge\n";
-    echo "glpi_{$cron['name']}_last_run_hours " . strtotime($cron['lastrun']) * 1 / 60 / 60 . "\n\n";
+    echo "# HELP glpi_crontasks_last_run_hours_{$cron['name']} Última vez que o cronjob `{$cron['name']}` rodou em horas\n";
+    echo "# TYPE glpi_crontasks_last_run_hours_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_last_run_hours_{$cron['name']} " . strtotime($cron['lastrun']) * 1 / 60 / 60 . "\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_last_run_days Última vez que o cronjob `{$cron['name']}` rodou em dias\n";
-    echo "# TYPE glpi_{$cron['name']}_last_run_days gauge\n";
-    echo "glpi_{$cron['name']}_last_run_days " . strtotime($cron['lastrun']) * 1 / 60 / 60 / 24 . "\n\n";
+    echo "# HELP glpi_crontasks_last_run_days_{$cron['name']} Última vez que o cronjob `{$cron['name']}` rodou em dias\n";
+    echo "# TYPE glpi_crontasks_last_run_days_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_last_run_days_{$cron['name']} " . strtotime($cron['lastrun']) * 1 / 60 / 60 / 24 . "\n\n";
     
-    echo "# HELP glpi_{$cron['name']}_run_state Dito se o cronjob `{$cron['name']}` rodou no período esperado (sim = 1, não = 0)\n";
-    echo "# TYPE glpi_{$cron['name']}_run_state gauge\n";
-    echo "glpi_{$cron['name']}_run_state " . intval((strtotime($cron['lastrun']) * 1 + $cron['frequency']) >= time()) . "\n\n";
+    echo "# HELP glpi_crontasks_run_state_{$cron['name']} Dito se o cronjob `{$cron['name']}` rodou no período esperado (sim = 1, não = 0)\n";
+    echo "# TYPE glpi_crontasks_run_state_{$cron['name']} gauge\n";
+    echo "glpi_crontasks_run_state_{$cron['name']} " . intval((strtotime($cron['lastrun']) * 1 + $cron['frequency']) >= time()) . "\n\n";
 }
