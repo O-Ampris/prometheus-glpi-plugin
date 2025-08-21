@@ -51,20 +51,6 @@ function get_data() {
     
     $sql = "
         SELECT
-            COALESCE(SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END), 0) AS new,
-            COALESCE(SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END), 0) AS atending_assigned,
-            COALESCE(SUM(CASE WHEN status = 3 THEN 1 ELSE 0 END), 0) AS atending_planned,
-            COALESCE(SUM(CASE WHEN status = 4 THEN 1 ELSE 0 END), 0) AS pending,
-            COALESCE(SUM(CASE WHEN status = 5 THEN 1 ELSE 0 END), 0) AS resolved,
-            COALESCE(SUM(CASE WHEN status = 6 THEN 1 ELSE 0 END), 0) AS closed
-        FROM glpi_tickets;
-    ";
-    
-    $result = $DB->query($sql);
-    $tickets = $result->fetch_assoc();
-    
-    $sql = "
-        SELECT
             COUNT(*) AS total,
             COALESCE(SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END), 0) AS new,
             COALESCE(SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END), 0) AS atending_assigned,
@@ -81,7 +67,7 @@ function get_data() {
     $sql = "
         SELECT
             COUNT(*) AS total,
-            SUM(is_active) AS active
+            COALESCE(SUM(is_active), 0) AS active
         FROM glpi_users;
     ";
 

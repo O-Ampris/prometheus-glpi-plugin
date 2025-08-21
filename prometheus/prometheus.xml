@@ -2,7 +2,7 @@
     <name>Prometheus GLPI</name>
     <key>prometheus</key>
     <state>stable</state>
-    <logo>https://raw.githubusercontent.com/O-Ampris/prometheus-glpi-plugin/master/prometheus/misc/logo.png</logo>
+    <logo>https://raw.githubusercontent.com/plss-github/prometheus-glpi-plugin/refs/heads/main/prometheus/misc/logo.png</logo>
     <description>
         <short>
             <en>GLPI plugin to host metrics to Prometheus.</en>
@@ -13,10 +13,10 @@
             <pt>Este plugin após ser instalado e ativado na página de plugins, irá fornecer as métricas do seu GLPI para o Prometheus na página `/plugins/prometheus/metrics.php`.</pt>
         </long>
     </description>
-    <homepage>https://github.com/O-Ampris/prometheus-glpi-plugin</homepage>
-    <download>https://github.com/O-Ampris/prometheus-glpi-plugin/releases</download>
-    <issues>https://github.com/O-Ampris/prometheus-glpi-plugin/issues</issues>
-    <readme>https://raw.githubusercontent.com/O-Ampris/prometheus-glpi-plugin/master/README.md</readme>
+    <homepage>https://github.com/plss-github/prometheus-glpi-plugin</homepage>
+    <download>https://github.com/plss-github/prometheus-glpi-plugin/releases</download>
+    <issues>https://github.com/plss-github/prometheus-glpi-plugin/issues</issues>
+    <readme>https://raw.githubusercontent.com/plss-github/prometheus-glpi-plugin/master/README.md</readme>
     <authors>
         <author>Ampris</author>
     </authors>
